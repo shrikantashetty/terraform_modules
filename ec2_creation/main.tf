@@ -47,7 +47,7 @@ resource "aws_instance" "web_server" {
   security_groups = [aws_security_group.ssh_http.id]
 
   tags = {
-    Name = "${var.environment}-KG-server"
+    Name = "${var.environment}-server"
   }
 }
 
